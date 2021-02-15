@@ -1,0 +1,168 @@
+﻿@{ 
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="https://@ViewContext.HttpContext.Request.Host/css/invoice.css?v=@DateTime.UtcNow.ToString("yyyyMMddHHmmssfff")" />
+</head>
+<body>
+    <div class="layout">
+        <div class="container-fluid">
+            <div class="header">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-8"><div class="col-padding"><img src="https://www.roundthecode.com/wp-content/themes/roundthecode/img/RoundTheCodeLogo-tablet.png" /></div></div>
+                        <div class="col-4"><div class="col-padding col-right"><span class="invoice">Invoice</span></div></div>
+                    </div>
+                </div>
+            </div>
+            <div class="sub-header">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="col-padding">
+                                <h2>Bill To</h2>
+                                <p>
+                                    My Company<br />
+                                    My Address<br />
+                                    My City<br />
+                                    90000
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="col-padding">
+                                <div class="container lines">
+                                    <h2>Invoice Details</h2>
+                                    <div class="row">
+                                        <div class="col-5">
+                                            <span class="title">Number:</span>
+                                        </div>
+                                        <div class="col-7 col-right">
+                                            0001
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-4">
+                                            <span class="title">Date:</span>
+                                        </div>
+                                        <div class="col-8 col-right">
+                                            1st Mar 2021
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="col-padding">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th class="description-full col-left">Description</th>
+                                            <th class="price col-right">Price</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="description-full col-left">This is my product</td>
+                                            <td class="price col-right">GBP 99.99</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-8">
+
+                                        </div>
+                                        <div class="col-4">
+                                            <div class="container lines">
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <span class="title">Total:</span>
+                                                    </div>
+                                                    <div class="col-6 col-right">
+                                                        GBP 99.99
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-7">
+                        <div class="col-padding">
+                            <h2>Recipient Details</h2>
+                            <p>
+                                My Address<br />
+                                My City<br />
+                                My Country
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-5">
+                        <div class="col-padding">
+                            <div class="container lines">
+                                <h2>Payment Details</h2>
+                                <div class="row">
+                                    <div class="col-3">
+                                        <span class="title">Bank:</span>
+                                    </div>
+                                    <div class="col-9 col-right">
+                                        The World Bank
+                                    </div>
+                                </div>
+                                
+                                <div class="row">
+                                    <div class="col-6">
+                                        <span class="title">Sort Code:</span>
+                                    </div>
+                                    <div class="col-6 col-right">
+                                        000000
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <span class="title">Account Number:</span>
+                                    </div>
+                                    <div class="col-6 col-right">
+                                        00000000
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <span class="title">Reference:</span>
+                                    </div>
+                                    <div class="col-6 col-right">
+                                        Invoice-0001
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
